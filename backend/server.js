@@ -11,7 +11,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173', // Vite default port
     'http://localhost:3000',
-    'https://ahttps://ai-consult-iota.vercel.app',
+    'https://ai-consultant-zeta.vercel.app',
     /\.vercel\.app$/
   ],
   methods: ['GET', 'POST'],
