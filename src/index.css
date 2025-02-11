@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom styles */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400;
+  background-size: 200% 200%;
+  animation: gradientFlow 4s ease infinite;
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus styles */
+*:focus {
+  @apply outline-none ring-2 ring-[#0A2647] ring-opacity-50;
+}
+
+/* Enhanced button styles */
+.btn-primary {
+  @apply bg-[#0A2647] text-white px-8 py-4 rounded-xl text-lg font-semibold 
+         hover:bg-[#0A3157] transition-all duration-300 transform hover:scale-105 
+         shadow-lg shadow-[#0A2647]/30 active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl
+         hover:bg-white/20 transition-all duration-300 border border-white/20;
+}
+
+/* Card hover effects */
+.hover-card {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* Input styles */
+.input-primary {
+  @apply w-full px-4 py-3 border-2 border-gray-200 rounded-xl
+         focus:ring-2 focus:ring-[#0A2647] focus:border-transparent
+         transition-all duration-300 bg-white/50 backdrop-blur-sm;
+}
+
+/* Section styles */
+.section-padding {
+  @apply py-24;
+}
+
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Typography enhancements */
+.heading-primary {
+  @apply text-4xl sm:text-5xl lg:text-7xl font-bold;
+}
+
+.heading-secondary {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r;
+}
