@@ -562,7 +562,7 @@ function App() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Follow Us</h3>
               <div className="flex gap-6">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-lg">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/105442715/admin/dashboard/" className="text-gray-400 hover:text-white transition-colors text-lg">LinkedIn</a>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors text-lg">Twitter</a>
               </div>
             </div>
